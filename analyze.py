@@ -1,9 +1,10 @@
 from azure.cognitiveservices.vision.computervision import ComputerVisionClient
+from flask.cli import load_dotenv
 from msrest.authentication import CognitiveServicesCredentials
 from azure.cognitiveservices.vision.computervision.models import OperationStatusCodes
 import time
 import os
-
+load_dotenv()
 endpoint = os.getenv('Endpoint')
 key = os.getenv('API_KEY')
 
